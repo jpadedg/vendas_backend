@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=express&message=framework&color=blue&style=for-the-badge&logo=EXPRESS"/>
-  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
@@ -69,9 +68,9 @@ $ npm start
 
 ## Casos de Uso
 
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
+A API funciona via HTTP e existem diversas rotas definidas, como exemplo, temos a rota POST de vendas onde junto com o Body, fazemos a requisição para adicionar uma nova venda no banco de dados. 
 
-Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
+![Alt text](Animation.gif)
 
 ## JSON :floppy_disk:
 
