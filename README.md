@@ -1,7 +1,7 @@
 <h1>Titulo ou Arte do Projeto</h1> 
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=express&message=framework&color=blue&style=for-the-badge&logo=EXPRESS"/>
   <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
@@ -26,6 +26,7 @@
 <p align="justify">
   uma API de um e-commerce de vendas online, tendo um banco de dados relacional. A API responde um CRUD sendo um produto, com um estoque, uma relação de 0..n e 0..n entre produtos e vendas, e a venda tem uma relação com clientes, como mostra a a imagem abaixo.
 </p>
+
 
 ![Alt text](image.png)
 
@@ -80,9 +81,6 @@ Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente n
 | -------- |-------- |-------- |-------- |-------- |-------- |
 |6|150|2023-11-07|pix|concluida|4
 
-... 
-
-Se quiser, coloque uma amostra do banco de dados 
 
 ## Iniciando/Configurando banco de dados
 
@@ -198,9 +196,5 @@ router.delete('/venda/:id', vendaController.apagar);
 
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 
-
-## Licença 
-
-The [MIT License]() (MIT)
 
 Copyright :copyright: 2023 - API-Vendas-Backend 
