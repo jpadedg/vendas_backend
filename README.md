@@ -14,15 +14,12 @@
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+:small_blue_diamond: [Rotas ](#rotas)
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-... 
-
-Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Descrição do projeto 
 
@@ -42,11 +39,6 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 
 :heavy_check_mark: CRUD de clientes
 
-## Layout ou Deploy da Aplicação :dash:
-
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
-
-
 ## Pré-requisitos
 
 :warning: [Node](https://nodejs.org/en/download/)
@@ -61,14 +53,6 @@ No terminal, clone o projeto:
 ```
 git clone https://github.com/jpadedg/vendas_backend.git
 ```
-
-... 
-
-Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
-
-## Como rodar os testes
-
-Coloque um passo a passo para executar os testes
 
 ```
 $ cd vendas_backend
