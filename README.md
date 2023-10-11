@@ -27,10 +27,10 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 ## Descrição do projeto 
 
 <p align="justify">
-  uma API de um e-commerce de vendas online, tendo um banco de dados relacional. A API responde um CRUD sendo um produto, com um estoque, uma relação de 0..n e 0..2 entre produtos e vendas, e a venda tem uma relação com clientes, como mostra a a imagem abaixo.
+  uma API de um e-commerce de vendas online, tendo um banco de dados relacional. A API responde um CRUD sendo um produto, com um estoque, uma relação de 0..n e 0..n entre produtos e vendas, e a venda tem uma relação com clientes, como mostra a a imagem abaixo.
 </p>
 
-IMAGEM
+![Alt text](image.png)
 
 ## Funcionalidades
 
@@ -152,6 +152,59 @@ ALTER TABLE produto ADD FOREIGN key (idestoque) REFERENCES estoque (id)
 ALTER TABLE venda ADD FOREIGN KEY(idCliente) REFERENCES cliente (id)
 ALTER TABLE produto_venda ADD FOREIGN KEY(idVenda) REFERENCES venda (id)
 ALTER TABLE produto_venda ADD FOREIGN KEY(idProduto) REFERENCES produto (id)
+```
+
+## Rotas 
+
+```
+Rotas de Estoque: 
+
+router.post('/estoque', estoqueController.adicionarEstoque);
+router.get('/estoque/:id', estoqueController.buscarEstoque);
+router.put('/estoque/:id', estoqueController.alterar);
+router.delete('/estoque/:id', estoqueController.apagar);
+
+```
+
+```
+Rotas de Clientes: 
+
+router.get('/clientes', clienteController.buscarTodos);
+router.get('/cliente/:id', clienteController.buscarCliente);
+router.post('/cliente', clienteController.adicionarCliente);
+router.put('/cliente/:id', clienteController.alterar);
+router.delete('/cliente/:id', clienteController.apagar);
+
+```
+
+```
+Rotas de Produtos: 
+
+router.get('/produto/', produtoController.buscarTodos);
+router.get('/produto/:id', produtoController.buscarProduto);
+router.post('/produto', produtoController.adicionarProduto);
+router.put('/produto/:id', produtoController.alterar);
+router.delete('/produto/:id', produtoController.apagar);
+
+```
+
+```
+Rotas de Produtos_Venda: 
+
+router.get('/produtoVenda/', produtoVendaController.buscarTodos);
+router.post('/produtoVenda', produtoVendaController.adicionarProdutoVenda);
+router.delete('/produtoVenda/:id', produtoVendaController.apagar);
+
+```
+
+```
+Rotas de Produtos_Venda: 
+
+router.get('/venda/', vendaController.buscarTodos);
+router.post('/venda', vendaController.adicionarVenda);
+router.put('/venda/:id', vendaController.alterar);
+router.delete('/venda/:id', vendaController.apagar);
+
 ```
 
 
